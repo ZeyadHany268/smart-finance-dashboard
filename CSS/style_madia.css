@@ -21,6 +21,17 @@
         display: none;
 
     }
+    
+    .sidebar__link {
+
+        justify-content: center;
+
+    }
+    .action-card {
+
+        justify-content: center;
+
+    }
 
 
     .layout__wrapper {
