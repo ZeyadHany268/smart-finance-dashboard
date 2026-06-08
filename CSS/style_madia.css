@@ -1,4 +1,71 @@
 /* ===============================
+   Tablet
+================================ */
+
+@media (max-width: 1024px) {
+
+
+    /* Sidebar smaller */
+    .sidebar {
+
+        width: 90px;
+
+    }
+
+
+    .sidebar__brand-text,
+    .sidebar__link span:not(.sidebar__icon),
+    .sidebar__actions h3,
+    .action-card span:not(.action-card__icon) {
+
+        display: none;
+
+    }
+
+
+    .layout__wrapper {
+
+        margin-right: 90px;
+
+    }
+
+
+
+    /* Dashboard 2 columns */
+
+    .dashboard__grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+
+        "transactions transactions"
+        "activity monthly-bills"
+        "budget-overview income-expenses-chart"
+        "budget-overview payment-methods"
+        "account-summary payment-methods";
+
+    }
+
+
+
+    .balance-overview__cards {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .balance-card {
+
+        width: calc(50% - 10px);
+
+    }
+
+
+
+}
+/* ===============================
    Mobile Responsive
 ================================ */
 
