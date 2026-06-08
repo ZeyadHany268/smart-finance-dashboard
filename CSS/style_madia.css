@@ -1,0 +1,95 @@
+/* ===============================
+   Mobile Responsive
+================================ */
+
+@media (max-width: 768px) {
+
+  /* Hide Sidebar */
+  .sidebar {
+    display: none;
+  }
+
+  /* Remove sidebar space */
+  .layout__wrapper {
+    margin-right: 0;
+    padding: 15px;
+  }
+
+  body.app {
+    display: block;
+  }
+
+  /* Header */
+  .topbar__container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .topbar__brand,
+  .topbar__actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Balance Cards */
+  .balance-overview__cards {
+    flex-direction: column;
+  }
+
+  .balance-card {
+    width: 100%;
+  }
+
+  /* Dashboard */
+  .dashboard__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Reset grid areas */
+  .transactions,
+  .activity,
+  .monthly-bills,
+  .budget-overview,
+  .income-expenses-chart,
+  .payment-methods,
+  .account-summary {
+    width: 100%;
+  }
+
+  /* Transactions scroll */
+  .transactions__table-wrapper {
+    overflow-x: auto;
+  }
+
+  .transactions__table {
+    min-width: 650px;
+  }
+
+  /* Monthly bills */
+  .monthly-bills__list {
+    grid-template-areas:
+      "bill1"
+      "bill2"
+      "bill3"
+      "bill4";
+    grid-template-columns: 1fr;
+  }
+
+  /* Cards */
+  .card-container {
+    height: 220px;
+  }
+
+  /* Topbar profile */
+  .topbar__profile {
+    justify-content: center;
+  }
+
+  .topbar__actions {
+    flex-direction: row;
+  }
+
+}
